@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0078d7, #00a2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  max-width: 450px;
+  width: 100%;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.signup-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #0078d7;
+}
+
+.signup-container p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 0.6rem 0;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 6px rgba(0,120,215,0.4);
+  outline: none;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #005a9e;
+  transform: scale(1.03);
+}
+
+.login-link, .back-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-link a, .back-link a {
+  color: #0078d7;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.login-link a:hover, .back-link a:hover {
+  color: #005a9e;
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.footer a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+  .signup-container h1 {
+    font-size: 1.6rem;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+}
